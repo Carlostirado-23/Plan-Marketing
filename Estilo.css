@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap");
 
 :root {
     /* --primary-color: #f9532d; */
-     /* --dark: #fff;  */
-    --primary-color: #52489C;
-    --primary-dark: #1F252E;
+    /* --dark: #fff;  */
+    --primary-color: #52489c;
+    --primary-dark: #1f252e;
 }
 
 * {
@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: "Outfit", sans-serif;
     background: #ffffff;
     color: #000;
     display: flex;
@@ -36,7 +36,6 @@ body {
     margin-top: -80px;
 }
 
-
 .img-w {
     width: 100%;
     height: auto;
@@ -45,7 +44,7 @@ body {
 
 /* Nav */
 header {
-    box-shadow: 0 4px 17px rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.1);
     background: #fff;
     position: sticky;
     top: 0;
@@ -72,13 +71,13 @@ header {
     text-decoration: none;
 }
 
-.logo a:hover{
-    color: #52489C;
+.logo a:hover {
+    color: #52489c;
 }
 
 ul {
     display: flex;
-    gap: .6rem;
+    gap: 0.6rem;
     list-style-type: none;
     background-color: transparent;
     overflow: hidden;
@@ -86,18 +85,18 @@ ul {
 
 li a {
     display: inline-block;
-    padding: .3rem 1rem;
+    padding: 0.3rem 1rem;
     color: #000;
     text-decoration: none;
     font-size: 1.05rem;
     font-weight: 600;
-    letter-spacing: .7px;
+    letter-spacing: 0.7px;
     border-radius: 36px;
     line-height: 2;
-    transition: .3s;
+    transition: 0.3s;
     opacity: 0;
-    animation: navani .3s ease forwards;
-    animation-delay: calc(.15s * var(--navAni));
+    animation: navani 0.3s ease forwards;
+    animation-delay: calc(0.15s * var(--navAni));
 }
 
 li a.active,
@@ -146,6 +145,14 @@ li a:hover {
 
 /* Nav End */
 
+/* IMAGEN MARKETING */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* IMAGEN MARKETING END */
+
 /* Section 1 */
 
 .main {
@@ -180,7 +187,7 @@ li a:hover {
     animation: topSideAni 1.5s ease forwards;
 }
 
-.name{
+.name {
     background-color: var(--primary-color);
     color: #fff;
     padding: 3px 8px;
@@ -188,13 +195,13 @@ li a:hover {
     border-radius: 5px;
 }
 
-.texto .parrafo{
+.texto .parrafo {
     font-size: 3em;
     font-weight: 600;
     margin-block: 10px;
 }
 
-.texto .typedText{
+.texto .typedText {
     color: var(--primary-color);
     text-transform: capitalize;
 }
@@ -231,16 +238,15 @@ li a:hover {
     text-align: center;
     opacity: 0;
     animation: SocialAni 1s ease forwards;
-    animation-delay: calc(.2s * var(--socialAni));
+    animation-delay: calc(0.2s * var(--socialAni));
 }
 
 .social a:hover {
     color: var(--primary-dark);
     background-color: var(--primary-color);
     box-shadow: 0 0 20px var(--primary-color);
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
-
 
 .images {
     margin-left: auto;
@@ -249,12 +255,11 @@ li a:hover {
     margin-top: -5%;
     text-align: center;
     overflow: hidden;
-    background-color: #52489C;
+    background-color: #52489c;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
 /* Section 1 End */
-
 
 .dark-mode {
     background-color: var(--primary-dark);
@@ -265,33 +270,34 @@ li a:hover {
     display: none;
 }
 
-.dark-mode .logo a, 
-.dark-mode ul li a, 
-.dark-mode .main span, 
-.dark-mode .main h1{
+.dark-mode .logo a,
+.dark-mode ul li a,
+.dark-mode .main span,
+.dark-mode .main h1 {
     color: #fff;
 }
 
-.dark-mode .col p{
-   color: #ffffff;
+.dark-mode .col p {
+    color: #ffffff;
 }
 
-.dark-mode .skills-header h3{
+.dark-mode .skills-header h3 {
     color: #fff;
- }
- .dark-mode footer{
+}
+.dark-mode footer {
     background-color: var(--primary-dark);
- }
+}
 
-.dark-mode .skills-box span{
+.dark-mode .skills-box span {
     color: #ffffff;
- }
+}
 
- .dark-mode .bottom-footer p a{
+.dark-mode .bottom-footer p a {
     color: #ffffff;
- }
+}
 
-.dark-mode ul li a.active, .dark-mode ul li a:hover {
+.dark-mode ul li a.active,
+.dark-mode ul li a:hover {
     color: var(--primary-color);
 }
 
@@ -300,7 +306,7 @@ li a:hover {
     background: var(--primary-dark);
 }
 /* ACERCA DE MI */
-.about-info{
+.about-info {
     position: relative;
     display: flex;
     align-items: center;
@@ -308,70 +314,68 @@ li a:hover {
     padding-block: 30px 70px;
     padding-inline: 20px;
     width: 100%;
-    box-shadow: 0 4px 17px rgba(0, 0, 0, .2);;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     margin: 20px;
 }
-.about-info p{
+.about-info p {
     text-align: center;
     font-size: 15px;
     color: #777;
 }
 
-
-
-.section{
+.section {
     padding-block: 6em;
     padding: 6% 8.4rem;
 }
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     width: 100%;
     gap: 50px;
 }
-.col{
+.col {
     display: flex;
     width: 50%;
 }
 
-.top-header{
+.top-header {
     text-align: center;
     margin-bottom: 5em;
 }
 
-.top-header span{
+.top-header span {
     color: #fff;
 }
-h3{
+h3 {
     font-size: 20px;
     font-weight: 600;
     color: var(--primary-dark);
     margin-bottom: 15px;
 }
 
-.in{
+.in {
     margin: 5px;
     padding: 10px;
 }
 
-.top-header .acerca{
+.top-header .acerca {
     font-size: 3em;
     font-weight: 600;
     filter: drop-shadow(0 0 10px rgba(131, 93, 127, 0.8));
 }
-.skills-box{
+.skills-box {
     margin: 10px;
 }
-.skills-header{
+.skills-header {
     margin-bottom: 30px;
 }
-.skills-list{
+.skills-list {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
 }
-.skills-list span{
+.skills-list span {
     font-size: 14px;
     background: var(--primary-color);
     color: #ffffff;
@@ -380,14 +384,13 @@ h3{
     text-align: center;
 }
 
-.skills-list span:hover{
+.skills-list span:hover {
     background: var(--primary-dark);
     color: var(--primary-color);
-
 }
 
 /* PROYECTOS*/
-.porta{
+.porta {
     display: block;
     margin: 50px;
     padding: 15px;
@@ -395,19 +398,17 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-.porta .proyec{
+.porta .proyec {
     filter: drop-shadow(0 0 10px rgba(59, 218, 143, 0.8));
 }
 
-.portafolio{
+.portafolio {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px 0;
-    
 }
 .projects {
     position: relative;
@@ -419,12 +420,10 @@ h3{
 }
 .projects .drop {
     position: relative;
-    width: 350px;
-    height: 350px;
-    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
-        25px 35px 20px rgba(0, 0, 0, 0.05),
-        25px 30px 30px rgba(0, 0, 0, 0.05),
-        inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    width: 390px;
+    height: 420px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05), 25px 35px 20px rgba(0, 0, 0, 0.05),
+        25px 30px 30px rgba(0, 0, 0, 0.05), inset -20px -20px 25px rgba(255, 255, 255, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -448,7 +447,7 @@ h3{
 }
 
 .projects .drop::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 50px;
     left: 80px;
@@ -460,7 +459,7 @@ h3{
 }
 
 .projects .drop::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 90px;
     left: 110px;
@@ -484,25 +483,23 @@ h3{
 
 .projects .drop .content h2 {
     position: relative;
-    width: 120px;
-    height: 80px;
+    width: 200px;
+    height: 112px;
     border-radius: 50%;
     background-color: #eff0f4;
-    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
-        inset -2px -5px 10px rgba(255, 255, 255, 1),
-        15px 15px 10px rgba(0, 0, 0, .05),
-        15px 10px 15px rgba(0, 0, 0, 0.25);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: var(--clr);
-        user-select: none;
-}
-
-.projects .drop .content p{
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1), inset -2px -5px 10px rgba(255, 255, 255, 1),
+        15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr);
     user-select: none;
 }
-.projects .drop .content a{
+
+.projects .drop .content p {
+    user-select: none;
+}
+.projects .drop .content a {
     position: relative;
     padding: 10px 25px;
     background: var(--clr);
@@ -515,13 +512,12 @@ h3{
     transition: 0.5s;
 }
 
-.projects .drop .content a:hover{
+.projects .drop .content a:hover {
     opacity: 1;
 }
 
-
 /* ----- FOOTER BOX ----- */
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -529,30 +525,29 @@ footer{
     row-gap: 30px;
     padding-block: 40px 60px;
 }
-.top-footer p{
+.top-footer p {
     font-size: 25px;
     font-weight: 600;
 }
-.middle-footer .footer-menu{
+.middle-footer .footer-menu {
     display: flex;
 }
-.footer_menu_list{
+.footer_menu_list {
     list-style: none;
 }
-.footer_menu_list a{
+.footer_menu_list a {
     text-decoration: none;
     font-weight: 500;
     margin-inline: 20px;
 }
-.footer-social-icons{
+.footer-social-icons {
     display: flex;
-    gap: 30px;   
+    gap: 30px;
 }
-.bottom-footer{
+.bottom-footer {
     font-size: 14px;
     margin-top: 10px;
 }
-
 
 /* Animation */
 @keyframes leftSideAni {
@@ -641,31 +636,31 @@ footer{
 
 /*PARA DISPOSITIVOS MOVILES*/
 /* IPHONE 11 */
-@media (max-width: 828px){
+@media (max-width: 828px) {
     .nav {
         padding: 0 2rem;
         width: 100%;
     }
 
-    .page-header .logo a{
+    .page-header .logo a {
         font-size: 2em;
     }
 
-    .mainicon .menu i{
+    .mainicon .menu i {
         font-size: 2em;
         margin-left: 10%;
     }
-    .mode .bx{
+    .mode .bx {
         font-size: 50px;
         margin: 10px;
     }
-    
+
     header {
         width: 100%;
         font-size: 2em;
     }
 
-    .main h3 span{
+    .main h3 span {
         font-size: 1.8em;
     }
     body {
@@ -688,11 +683,11 @@ footer{
         z-index: 100;
     }
 
-    ul li{
+    ul li {
         margin-top: 60px;
     }
 
-    ul li a{
+    ul li a {
         font-size: 2em;
     }
 
@@ -701,16 +696,16 @@ footer{
         padding: 55px;
     }
 
-    .porta{
+    .porta {
         transform: translate(15%, 0);
     }
 
-    .porta .proyec{
+    .porta .proyec {
         font-size: 2em;
         margin-left: -25%;
     }
 
-    .top-header .acerca{
+    .top-header .acerca {
         font-size: 5em;
         margin-left: 15%;
     }
@@ -719,10 +714,10 @@ footer{
         display: block;
         font-size: 1.5rem;
         font-weight: bold;
-        color: #244D61;
+        color: #244d61;
     }
 
-    #click:checked~ul {
+    #click:checked ~ ul {
         left: 0%;
         transition: all 0.3s ease;
     }
@@ -742,79 +737,79 @@ footer{
         width: 100%;
         height: 80%;
     }
-   
+
     .home .main {
         width: 100%;
         margin-left: 8%;
         font-size: 1.2em;
     }
 
-    .detail .front{
+    .detail .front {
         font-size: 2.5em;
     }
 
-    .detail .social a{
+    .detail .social a {
         font-size: 2.8em;
     }
 
-    .projects{
+    .projects {
         width: 100%;
         margin-left: 4%;
         font-size: 1.9em;
     }
 
-    .row{
+    .row {
         display: contents;
     }
-    
-    .section{
+
+    .section {
         width: auto;
         padding: 3% 6%;
     }
 
-    .col{
+    .col {
         width: 100%;
         margin-left: 9%;
     }
 
-    .row .col .about-info h3{
+    .row .col .about-info h3 {
         font-size: 3em;
     }
 
-    .row .col .about-info p{
+    .row .col .about-info p {
         font-size: 2em;
     }
 
-    .col .skills-box h3{
+    .col .skills-box h3 {
         width: 100%;
         margin-left: -15%;
         font-size: 2em;
     }
 
-    .skills-box span{
+    .skills-box span {
         width: 100%;
         margin-left: -15%;
         padding: 5px;
         font-size: 1.9em;
     }
-    
-    footer{
+
+    footer {
         width: 100%;
         margin-left: 20%;
         text-align: center;
         margin: 30px;
     }
-    .top-footer p{
+    .top-footer p {
         font-size: 2.5em;
     }
 
-    footer .social a{
+    footer .social a {
         font-size: 3em;
     }
-    footer .bottom-footer p{
+    footer .bottom-footer p {
         font-size: 1.8em;
     }
-    footer .bottom-footer a{
+    footer .bottom-footer a {
         font-size: 1.2em;
     }
 
@@ -822,42 +817,46 @@ footer{
         position: relative;
         width: 560px;
         height: 550px;
-        box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
-            25px 35px 20px rgba(0, 0, 0, 0.05),
-            25px 30px 30px rgba(0, 0, 0, 0.05),
-            inset -20px -20px 25px rgba(255, 255, 255, 0.9);
-        
+        box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05), 25px 35px 20px rgba(0, 0, 0, 0.05),
+            25px 30px 30px rgba(0, 0, 0, 0.05), inset -20px -20px 25px rgba(255, 255, 255, 0.9);
     }
 
-    .content a{
+    .content a {
         margin: 10px;
     }
 
+    /* IMAGEN MARKETING */
+    .center {
+        width: 100%;
+        margin: 33px;
+        margin-top: -87px;
+    }
+    /* IMAGEN MARKETING END */
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .nav {
         padding: 0 2rem;
     }
 
-    .page-header .logo a{
+    .page-header .logo a {
         font-size: 1.2em;
     }
 
-    .mainicon .menu i{
+    .mainicon .menu i {
         font-size: 1.2em;
         margin-left: 10%;
     }
-    .mode .bx{
+    .mode .bx {
         font-size: 30px;
         margin: 10px;
     }
-    
+
     header {
         font-size: 1em;
     }
 
-    .main h3 span{
+    .main h3 span {
         font-size: 1em;
     }
 
@@ -876,11 +875,11 @@ footer{
         z-index: 100;
     }
 
-    ul li{
+    ul li {
         margin-top: 60px;
     }
 
-    ul li a{
+    ul li a {
         font-size: 2em;
         color: #ffffff;
     }
@@ -890,16 +889,16 @@ footer{
         margin-left: -10%;
     }
 
-    .porta{
+    .porta {
         transform: translate(15%, 0);
     }
 
-    .porta .proyec{
+    .porta .proyec {
         font-size: 1.5em;
         margin-left: -10%;
     }
 
-    .top-header .acerca{
+    .top-header .acerca {
         font-size: 3em;
         margin-right: 10%;
     }
@@ -908,10 +907,10 @@ footer{
         display: block;
         font-size: 1.5rem;
         font-weight: bold;
-        color: #244D61;
+        color: #244d61;
     }
 
-    #click:checked~ul {
+    #click:checked ~ ul {
         left: 0%;
         transition: all 0.3s ease;
     }
@@ -931,92 +930,90 @@ footer{
         width: 100%;
         height: 90%;
     }
-   
+
     .home .main {
         margin-left: -40%;
         font-size: 1em;
     }
 
-    .detail .front{
+    .detail .front {
         font-size: 1.5em;
     }
 
-    .detail .social a{
+    .detail .social a {
         font-size: 1.5em;
     }
 
-    .projects{
+    .projects {
         margin-left: 7%;
         font-size: 1.2em;
     }
 
-    .row{
+    .row {
         display: contents;
     }
-    
-    .section{
+
+    .section {
         padding: 3% 6%;
     }
 
-    .col{
+    .col {
         margin-left: 5%;
     }
 
-    .row .col .about-info h3{
+    .row .col .about-info h3 {
         font-size: 1.8em;
     }
 
-    .row .col .about-info p{
+    .row .col .about-info p {
         font-size: 1.2em;
     }
 
-    .col .skills-box h3{
+    .col .skills-box h3 {
         font-size: 1.2em;
         margin-left: 0;
     }
 
-    .skills-box span{
+    .skills-box span {
         padding: 5px;
-        font-size: .9em;
+        font-size: 0.9em;
         margin-left: 0;
     }
-    
-    footer{
+
+    footer {
         text-align: center;
         margin: 30px;
     }
-    .top-footer p{
+    .top-footer p {
         font-size: 1.5em;
         margin-left: 5%;
     }
 
-    footer .social a{
+    footer .social a {
         font-size: 1.5em;
     }
-    footer .bottom-footer p{
+    footer .bottom-footer p {
         font-size: 1.2em;
     }
-    footer .bottom-footer a{
+    footer .bottom-footer a {
         font-size: 1.2em;
     }
 
     .projects .drop {
         position: relative;
         width: 400px;
-        height: 450px;
-        box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
-            25px 35px 20px rgba(0, 0, 0, 0.05),
-            25px 30px 30px rgba(0, 0, 0, 0.05),
-            inset -20px -20px 25px rgba(255, 255, 255, 0.9);
-        
+        height: 500px;
+        box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05), 25px 35px 20px rgba(0, 0, 0, 0.05),
+            25px 30px 30px rgba(0, 0, 0, 0.05), inset -20px -20px 25px rgba(255, 255, 255, 0.9);
     }
 
-    .content a{
+    .projects .drop .content h2 {
+        font-size: 24px;
+    }
+
+    .content a {
         margin: 10px;
     }
-
 }
-
-
 
 /* asi ve */
